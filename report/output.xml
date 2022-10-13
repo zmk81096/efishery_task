@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on darwin)" generated="20221013 20:12:38.261" rpa="false">
+<suite id="s1" name="Search" source="/Users/zulfikar/Documents/efishery_task/tests-web/search.robot">
+<test id="s1-t1" name="Open Youtube Music">
+<kw name="Given Open Youtube Music website in chrome" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20221013 20:12:38.600" level="INFO">Opening browser 'chrome' to base url 'https://music.youtube.com/'.</msg>
+<status status="PASS" starttime="20221013 20:12:38.599" endtime="20221013 20:12:45.100"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221013 20:12:45.100" endtime="20221013 20:12:45.304"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:38.597" endtime="20221013 20:12:45.305"></status>
+</kw>
+<kw name="Then User will see Youtube Music landing home page" library="keywords">
+<kw name="Verify Home button" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${home_btn}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:45.307" endtime="20221013 20:12:45.427"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${home_btn}</arg>
+</arguments>
+<msg timestamp="20221013 20:12:45.483" level="INFO">Current page contains element '//*[@tab-id='FEmusic_home']'.</msg>
+<status status="PASS" starttime="20221013 20:12:45.427" endtime="20221013 20:12:45.483"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.306" endtime="20221013 20:12:45.483"></status>
+</kw>
+<kw name="Verify Explore button" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${explore_btn}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:45.485" endtime="20221013 20:12:45.528"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.484" endtime="20221013 20:12:45.528"></status>
+</kw>
+<kw name="Verify Library button" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${library_btn}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:45.529" endtime="20221013 20:12:45.598"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.529" endtime="20221013 20:12:45.598"></status>
+</kw>
+<kw name="Verify Search button" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${search_btn}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:45.599" endtime="20221013 20:12:45.647"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.598" endtime="20221013 20:12:45.647"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.305" endtime="20221013 20:12:45.648"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:38.595" endtime="20221013 20:12:45.648" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Go To Explore Page">
+<kw name="Given User on Home page" library="keywords">
+<kw name="Verify Home button" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${home_btn}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:45.653" endtime="20221013 20:12:45.729"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${home_btn}</arg>
+</arguments>
+<msg timestamp="20221013 20:12:45.746" level="INFO">Current page contains element '//*[@tab-id='FEmusic_home']'.</msg>
+<status status="PASS" starttime="20221013 20:12:45.729" endtime="20221013 20:12:45.746"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.652" endtime="20221013 20:12:45.746"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.651" endtime="20221013 20:12:45.746"></status>
+</kw>
+<kw name="When Click Explore button" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${explore_btn}</arg>
+</arguments>
+<msg timestamp="20221013 20:12:45.748" level="INFO">Clicking element '//*[@tab-id='FEmusic_explore']'.</msg>
+<status status="PASS" starttime="20221013 20:12:45.748" endtime="20221013 20:12:45.878"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2 second</arg>
+</arguments>
+<msg timestamp="20221013 20:12:47.880" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221013 20:12:45.878" endtime="20221013 20:12:47.880"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.747" endtime="20221013 20:12:47.880"></status>
+</kw>
+<kw name="Then User will see Explore page" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${charts_menu}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:47.881" endtime="20221013 20:12:47.910"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:47.881" endtime="20221013 20:12:47.910"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:45.650" endtime="20221013 20:12:47.911" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Search a Singer">
+<kw name="Given User on Explore page" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${charts_menu}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:47.915" endtime="20221013 20:12:47.941"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:47.914" endtime="20221013 20:12:47.942"></status>
+</kw>
+<kw name="When Click Search button" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${search_btn}</arg>
+</arguments>
+<msg timestamp="20221013 20:12:47.944" level="INFO">Clicking element '//*[contains(@class, 'ytmusic-search-box') and text() = 'Search']'.</msg>
+<status status="PASS" starttime="20221013 20:12:47.943" endtime="20221013 20:12:48.027"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2 second</arg>
+</arguments>
+<msg timestamp="20221013 20:12:50.029" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221013 20:12:48.028" endtime="20221013 20:12:50.030"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:47.942" endtime="20221013 20:12:50.030"></status>
+</kw>
+<kw name="And Type a Singer Sheila on 7" library="keywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${search_inputText}</arg>
+<arg>Sheila on 7</arg>
+</arguments>
+<msg timestamp="20221013 20:12:50.032" level="INFO">Typing text 'Sheila on 7' into text field '//*[@class='style-scope ytmusic-search-box' and @id='input']'.</msg>
+<status status="PASS" starttime="20221013 20:12:50.032" endtime="20221013 20:12:50.273"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${search_inputText}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20221013 20:12:50.274" level="INFO">Sending key(s) ('ENTER',) to //*[@class='style-scope ytmusic-search-box' and @id='input'] element.</msg>
+<msg timestamp="20221013 20:12:50.646" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20221013 20:12:50.646" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20221013 20:12:50.273" endtime="20221013 20:12:50.765"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:50.031" endtime="20221013 20:12:50.765"></status>
+</kw>
+<kw name="Then Sheila on 7 Songs Will be Displayed" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${result_search}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:50.767" endtime="20221013 20:12:50.802"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:50.766" endtime="20221013 20:12:50.802"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:47.912" endtime="20221013 20:12:50.803" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Play the Song">
+<kw name="Given List of Song" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${list_of_song}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:50.807" endtime="20221013 20:12:51.757"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:50.806" endtime="20221013 20:12:51.758"></status>
+</kw>
+<kw name="When Click Song Title" library="keywords">
+<kw name="Set Focus To Element" library="Selenium2Library">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>${song_title}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:51.760" endtime="20221013 20:12:51.810"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${song_title}</arg>
+</arguments>
+<msg timestamp="20221013 20:12:51.810" level="INFO">Clicking element '//a[.='Dan...']'.</msg>
+<status status="PASS" starttime="20221013 20:12:51.810" endtime="20221013 20:12:52.050"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:51.759" endtime="20221013 20:12:52.050"></status>
+</kw>
+<kw name="Then The Song Will Play" library="keywords">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${play_pause_button}</arg>
+</arguments>
+<status status="PASS" starttime="20221013 20:12:52.051" endtime="20221013 20:12:52.130"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:52.050" endtime="20221013 20:12:52.130"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:50.805" endtime="20221013 20:12:52.131" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Close Browser">
+<kw name="Given Close The Browser" library="keywords">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7 second</arg>
+</arguments>
+<msg timestamp="20221013 20:12:59.134" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20221013 20:12:52.133" endtime="20221013 20:12:59.135"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221013 20:12:59.135" endtime="20221013 20:12:59.388"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:52.132" endtime="20221013 20:12:59.389"></status>
+</kw>
+<status status="PASS" starttime="20221013 20:12:52.131" endtime="20221013 20:12:59.390" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20221013 20:12:38.263" endtime="20221013 20:12:59.394"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Search">Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
