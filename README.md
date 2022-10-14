@@ -1,5 +1,5 @@
 # EFISHERY_TASK
-####How to run this automation :
+#### How to run this automation :
 1. Install Python 3.8 
       * For windows in [here](https://www.python.org/downloads/windows/) and execute python.exe.)
       * For MAC OS please execute use homebrew, see the [url](https://docs.python-guide.org/starting/install3/osx/).
@@ -13,8 +13,9 @@
 
 4. pip install robotframework-selenium2library
 
-5. Clone this repo
+#### How to run this automation
+1. Clone this repo
 
-6. Open in your code editor
+2. Open in your code editor
 
-7. Run this command in the code editor terminal `robot -d "report" ./tests-web/search.robot`
+3. Run this command in the code editor terminal `robot -d "report" ./tests-web/search.robot`
