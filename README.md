@@ -16,6 +16,6 @@
 #### How to run this automation
 1. Clone this repo
 
-2. Open in your code editor
+2. Open this project in your code editor
 
 3. Run this command in the code editor terminal `robot -d "report" ./tests-web/search.robot`
