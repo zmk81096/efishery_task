@@ -10,4 +10,5 @@ ${search_inputText}             //*[@class='style-scope ytmusic-search-box' and 
 ${result_search}                css:a[aria-label="Sheila on 7"]
 ${list_of_song}                 //*[@class='style-scope ytmusic-shelf-renderer' and text()='Songs']
 ${song_title}                   //a[.='Dan...']
-${play_pause_button}            //tp-yt-paper-icon-button[@id='play-pause-button']
+${play_pause_button}            //*[@id="play-pause-button"]
+${play_button_bottom_bar}       //*[@title='Play']

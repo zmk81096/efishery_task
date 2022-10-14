@@ -17,6 +17,7 @@ User on Home page
 
 User on Explore page
     Wait Until Page Contains Element            ${charts_menu}
+    Page Should Contain Element                 ${charts_menu}
 
 Verify Home button
     Wait Until Page Contains Element            ${home_btn}
@@ -59,6 +60,20 @@ Click Song Title
 The Song Will Play
     Wait Until Page Contains Element            ${play_pause_button}
 
+Click Pause button
+    Sleep                                       60 second
+    Wait Until Page Contains Element            ${play_pause_button}
+    Set Focus To Element                        ${play_pause_button}
+    Click Element                               ${play_pause_button}
+
+The Song Pause
+    Sleep                                       2 second
+    Wait Until Page Contains Element            ${play_button_bottom_bar}
+
+The Song Play again
+    Set Focus To Element                        ${play_button_bottom_bar}
+    Click Element                               ${play_button_bottom_bar}
+
 Close The Browser
-    sleep                                       7 second
+    sleep                                       60 second
     Close Browser
