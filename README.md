@@ -17,4 +17,4 @@
 
 6. Open in your code editor
 
-7. Run this comman in the code editor terminal `robot -d "report" ./tests-web/search.robot`
+7. Run this command in the code editor terminal `robot -d "report" ./tests-web/search.robot`
